@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paws & Care Foundation</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body class="font-['Poppins',_sans-serif] bg-gray-50">
+    <!-- ============ HEADER / NAVBAR ============ -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 md:h-20">
+          <!-- Logo -->
+          <a href="./index.html" class="flex items-center gap-2 hover:scale-105 transition">
+            <div class="w-10 h-10 md:w-12 md:h-12 bg-[#F5921B] rounded-full flex items-center justify-center shadow">
+              <i class="fa-solid fa-paw text-white text-lg"></i>
+            </div>
+            <div class="leading-tight">
+              <span class="text-[#2D2D2D] font-bold text-base block">Paws & Care</span>
+              <span class="text-[#F5921B] font-semibold text-[10px] tracking-wider">Foundation</span>
+            </div>
+          </a>
+
+          <!-- Desktop Nav -->
+          <ul class="hidden lg:flex items-center gap-8">
+            <li><a href="./index.html" class="text-[#2D2D2D] font-medium text-sm hover:text-[#F5921B]">Home</a></li>
+            <li><a href="./programs.html" class="text-[#2D2D2D] font-medium text-sm hover:text-[#F5921B]">Programs</a></li>
+            <li><a href="./stories.html" class="text-[#2D2D2D] font-medium text-sm hover:text-[#F5921B]">Stories</a></li>
+            <li><a href="./contect.html" class="text-[#2D2D2D] font-medium text-sm hover:text-[#F5921B]">Get Involved</a></li>
+          </ul>
+
+          <!-- Right side -->
+          <div class="flex items-center gap-3 md:gap-4">
+            <button class="w-9 h-9 rounded-full flex items-center justify-center text-[#2D2D2D] hover:bg-gray-100 transition" aria-label="Toggle theme">
+              <i class="fa-solid fa-moon"></i>
+            </button>
+            <a href="./contect.html" class="hidden sm:inline-flex items-center bg-[#F5921B] hover:bg-[#e07e0a] hover:scale-105 transition text-white font-semibold text-sm px-5 py-2.5 rounded-full shadow">
+              Donate
+            </a>
+            <label for="menu-toggle" class="lg:hidden flex flex-col justify-center items-center w-9 h-9 gap-[5px] cursor-pointer" aria-label="Toggle menu">
+              <span class="block w-6 h-[2.5px] bg-[#2D2D2D] rounded-full"></span>
+              <span class="block w-6 h-[2.5px] bg-[#2D2D2D] rounded-full"></span>
+              <span class="block w-6 h-[2.5px] bg-[#2D2D2D] rounded-full"></span>
+            </label>
+          </div>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden border-t border-gray-100 max-h-0 peer-checked:max-h-[400px] overflow-hidden transition-all duration-300">
+          <ul class="py-4 space-y-1">
+            <li><a href="./index.html" class="block px-4 py-3 text-[#2D2D2D] font-medium text-sm hover:bg-orange-50 rounded-lg">Home</a></li>
+            <li><a href="./programs.html" class="block px-4 py-3 text-[#2D2D2D] font-medium text-sm hover:bg-orange-50 rounded-lg">Programs</a></li>
+            <li><a href="./stories.html" class="block px-4 py-3 text-[#2D2D2D] font-medium text-sm hover:bg-orange-50 rounded-lg">Stories</a></li>
+            <li><a href="./contect.html" class="block px-4 py-3 text-[#2D2D2D] font-medium text-sm hover:bg-orange-50 rounded-lg">Get Involved</a></li>
+            <li class="pt-2 px-4 sm:hidden">
+              <a href="./contect.html" class="block text-center bg-[#F5921B] hover:bg-[#e07e0a] text-white font-semibold text-sm px-5 py-3 rounded-full">
+                🐾 Donate Now
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ========= complete main secation =========== -->
+    <main>
+      <!-- hero section top banner -->
+      <section class="w-full bg-[url('./assets/horse.png')] bg-cover bg-center bg-no-repeat min-h-[250px] sm:min-h-[300px] md:min-h-[380px] flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16 w-full">
+          <div>
+            <h3 class="text-[#E8A33D] text-lg sm:text-2xl md:text-3xl font-bold tracking-wider">OUR PROGRAMS</h3>
+            <h1 class="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-2 md:mb-4 transition-all duration-500 hover:scale-105 hover:translate-x-2">
+              Our Programs
+            </h1>
+            <p class="text-white text-sm sm:text-base md:text-xl font-medium max-w-xl leading-relaxed transition-all duration-500 hover:translate-x-2">
+              We work on multiple fronts to create a better future for animals.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== card section ========== -->
+      <section class="w-full">
+        <div class="max-w-7xl mx-auto mt-[30px] md:mt-[40px] px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- card box-1 -->
+          <div
+            class="w-full rounded-[15px] bg-white shadow-[0px_10px_25px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+          >
+            <img
+              class="w-full rounded-[15px]"
+              src="./assets/card1.png"
+              alt=""
+            />
+             <div class="bg-white pt-[10px] md:pt-[15px] p-6">
+              <h3 class="text-[#1E4A3D] text-[18px] font-bold pt-1">
+                🐾 Rescue & Recovery
+              </h3>
+              <p
+                class="pt-[4px] text-[#6B6B6B] text-[13px] font-[Poppins Regular]"
+              >
+                We rescue injured, abandoned and <br />stray animals from
+                dangerous situations <br />
+                and provide immediate care.
+              </p>
+              <a class="text-[#1E4A3D] text-[13px] font-bold pt-1" href="#"
+                >Learn More ->
+              </a>
+            </div>
+          </div>
+
+          <!-- card box-2 -->
+            
+          <div
+            class="w-full rounded-[15px] bg-white shadow-[0px_10px_25px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+            <img
+              class="w-full rounded-[15px]"
+              src="./assets/card2.png"
+              alt=""
+            />
+           <div class="bg-white pt-[10px] md:pt-[15px] p-6">
+              <h3 class="text-[#1E4A3D] text-[18px] font-bold pt-1">
+                🐾 Medical Care
+              </h3>
+              <p
+                class="pt-[4px] text-[#6B6B6B] text-[13px] font-[Poppins Regular]"
+              >
+               We provide vaccination, treatment, <br />pay/neuter services and regular <br />
+               health checkups.
+              </p>
+              <a class="text-[#1E4A3D] text-[13px] font-bold pt-1" href="#"
+                >Learn More ->
+              </a>
+            </div>
+          </div>
+
+           <!-- card box-3 -->
+           
+          <div
+            class="w-full rounded-[15px] bg-white shadow-[0px_10px_25px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+          >
+            <div>
+            <img
+              class="w-full rounded-[15px]"
+              src="./assets/card3.png"
+              alt=""
+            />
+            </div>
+           
+            <div class="bg-white pt-[10px] md:pt-[15px] p-6">
+              <h3 class="text-[#1E4A3D] text-[18px] font-bold pt-1">
+                🐾 Adoption
+              </h3>
+              <p
+                class="pt-[4px] text-[#6B6B6B] text-[13px] font-[Poppins Regular]"
+              >
+                We match our rescued animals <br />with loving and responsible families<br />
+                for a better future.
+              </p>
+              <a class="text-[#1E4A3D] text-[13px] font-bold pt-1" href="#"
+                >Learn More ->
+              </a>
+            </div>
+          </div>
+
+           <!-- card box-4 -->
+          <div
+            class="w-full rounded-[15px] bg-white shadow-[0px_10px_25px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+          >
+            <img
+              class="w-full rounded-[15px]"
+              src="./assets/card4.png"
+              alt=""
+            />
+             <div class="bg-white pt-[10px] md:pt-[15px] p-6">
+              <h3 class="text-[#1E4A3D] text-[18px] font-bold pt-1">
+                🐾 Food & Shelter
+              </h3>
+              <p
+                class="pt-[4px] text-[#6B6B6B] text-[13px] font-[Poppins Regular]"
+              >
+                We provide nutritious food,<br />clean shelter and a safe environment <br />
+                for recovery and care.
+              </p>
+              <a class="text-[#1E4A3D] text-[13px] font-bold pt-1" href="#"
+                >Learn More ->
+              </a>
+            </div>
+          </div>
+
+           <!-- card box-5 -->
+          <div
+            class="w-full rounded-[15px] bg-white shadow-[0px_10px_25px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+          >
+             <img
+              class="w-full rounded-[15px]"
+              src="./assets/card5.jpeg"
+              alt=""
+            />
+             <div class="bg-white pt-[10px] md:pt-[15px] p-6">
+              <h3 class="text-[#1E4A3D] text-[18px] font-bold pt-1">
+                🐾 Animal Welfare
+              </h3>
+              <p
+                class="pt-[4px] text-[#6B6B6B] text-[13px] font-[Poppins Regular]"
+              >
+                We work for the overall welfare of <br />all animals, including farm,<br />
+                wild and street animals.
+              </p>
+              <a class="text-[#1E4A3D] text-[13px] font-bold pt-1" href="#"
+                >Learn More ->
+              </a>
+            </div>
+          </div>
+        
+           <!-- card box-6 -->
+          <div
+            class="w-full rounded-[15px] bg-white shadow-[0px_10px_25px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+          >
+            <img
+              class="w-full rounded-[15px]"
+              src="./assets/card1.png"
+              alt=""
+            />
+             <div class="bg-white pt-[10px] md:pt-[15px] p-6">
+              <h3 class="text-[#1E4A3D] text-[18px] font-bold pt-1">
+                🐾 Education & Awareness
+              </h3>
+              <p
+                class="pt-[4px] text-[#6B6B6B] text-[13px] font-[Poppins Regular]"
+              >
+                We educate communities about <br/>animal care, rights and responsible <br/>pet ownership. 
+              </p>
+              <a class="text-[#1E4A3D] text-[13px] font-bold pt-1" href="#"
+                >Learn More ->
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- bottem Box section -->
+       <section class="w-full">
+               <div class="max-w-7xl mx-auto mt-8 bg-[#EAF4EE] rounded-xl p-6">
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-5 text-center sm:text-left">
+                <!-- Icon -->
+              <div class="text-[#1F3D33]  text-5xl md:text-7xl  pt-1  font-bold ">
+                    <i class="fa-solid fa-paw"></i>
+                  </div>
+                  <div class="flex  flex-col items-center justify-center gap-[20px] md:gap-[10px] p-[20px]">
+                     <h1 class="text-[#1F3D33] font-bold md:text-[20px] md:mr-[100px] transition-all duration-300 hover:translate-x-2" >Together we can do more</h1>
+                   <p class="text-[#5A6B63] text-[15px] pl-[35px]">Support our programs and help us rescue more lives</p>
+                     <div>
+                         <button class="bg-[#F4A340] text-white rounded-[10px] px-[20px] py-[10px] mr-[10px] shadow-[0px_10px_25px_rgba(0,0,0,0.08)] transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-lg">Donate Now</button>
+                         <button class="border-solid border-2 border-[#1F3D33] text-[#1F3D33] rounded-[10px] px-[20px] py-[10px] transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-lg">Become a Volunteer</button>
+                     </div>
+                  </div>
+             </div>
+       </section>
+    </main>
+  <!-- ============  FOOTER SECTION ============ -->
+    <footer class="bg-[#1B3A2F] text-white pt-12 pb-6 mt-12">
+      <!-- 4-Column Grid Container -->
+      <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        
+        <!-- Column 1: Logo & About -->
+        <div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-paw text-2xl text-[#f6a21a]"></i>
+            <h2 class="text-xl font-bold">Paws & Care</h2>
+          </div>
+          <p class="text-sm text-gray-300 mt-3 ">
+            We rescue, care for, and shelter animals in need. Every life matters.
+          </p>
+          <!-- Social Icons -->
+          <div class="flex gap-4 mt-4 text-lg">
+            <a href="#" class="hover:text-[#f6a21a]"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="hover:text-[#f6a21a]"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="hover:text-[#f6a21a]"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="hover:text-[#f6a21a]"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="text-base font-bold text-[#f6a21a] mb-3">Quick Links</h3>
+          <ul class="space-y-2 text-sm text-gray-300">
+            <li><a href="./index.html" class="hover:text-[#f6a21a]">Home</a></li>
+            <li><a href="./programs.html" class="hover:text-[#f6a21a]">Programs</a></li>
+            <li><a href="./stories.html" class="hover:text-[#f6a21a]">Stories</a></li>
+            <li><a href="./contect.html" class="hover:text-[#f6a21a]">Get Involved</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Programs -->
+        <div>
+          <h3 class="text-base font-bold text-[#f6a21a] mb-3">Programs</h3>
+          <ul class="space-y-2 text-sm text-gray-300">
+            <li><a href="#" class="hover:text-[#f6a21a]">Rescue & Recovery</a></li>
+            <li><a href="#" class="hover:text-[#f6a21a]">Medical Care</a></li>
+            <li><a href="#" class="hover:text-[#f6a21a]">Adoption</a></li>
+            <li><a href="#" class="hover:text-[#f6a21a]">Food & Shelter</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact Us -->
+        <div>
+          <h3 class="text-base font-bold text-[#f6a21a] mb-3">Contact Us</h3>
+          <ul class="space-y-3 text-sm text-gray-300">
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-phone text-[#f6a21a]"></i>
+              <a href="tel:+919876543210" class="hover:text-[#f6a21a]">+91 98765 43210</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-envelope text-[#f6a21a]"></i>
+              <a href="mailto:info@pawsandcare.org" class="hover:text-[#f6a21a]">info@pawsandcare.org</a>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-location-dot text-[#f6a21a] mt-1"></i>
+              <span>123 Green Valley Road, Bengaluru, Karnataka</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bottom Bar -->
+      <div class="border-t border-gray-700 mt-10 pt-4 text-center text-xs text-gray-400">
+        <p>© 2026 Paws & Care Foundation. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
