@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>HoofHope</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+
+<body class="bg-white">
+
+     <!-- ============ HEADER / NAVBAR ============ -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 md:h-20">
+          <!-- Logo -->
+          <a href="./index.html" class="flex items-center gap-2 hover:scale-105 transition">
+            <div class="w-10 h-10 md:w-12 md:h-12 bg-[#F5921B] rounded-full flex items-center justify-center shadow">
+              <i class="fa-solid fa-paw text-white text-lg"></i>
+            </div>
+            <div class="leading-tight">
+              <span class="text-[#2D2D2D] font-bold text-base block">Paws & Care</span>
+              <span class="text-[#F5921B] font-semibold text-[10px] tracking-wider">Foundation</span>
+            </div>
+          </a>
+
+          <!-- Desktop Nav -->
+          <ul class="hidden lg:flex items-center gap-8">
+            <li><a href="./index.html" class="text-[#2D2D2D] font-medium text-sm hover:text-[#F5921B]">Home</a></li>
+            <li><a href="./programs.html" class="text-[#2D2D2D] font-medium text-sm hover:text-[#F5921B]">Programs</a></li>
+            <li><a href="./stories.html" class="text-[#2D2D2D] font-medium text-sm hover:text-[#F5921B]">Stories</a></li>
+            <li><a href="./contect.html" class="text-[#2D2D2D] font-medium text-sm hover:text-[#F5921B]">Get Involved</a></li>
+          </ul>
+
+          <!-- Right side -->
+          <div class="flex items-center gap-3 md:gap-4">
+            <button class="w-9 h-9 rounded-full flex items-center justify-center text-[#2D2D2D] hover:bg-gray-100 transition" aria-label="Toggle theme">
+              <i class="fa-solid fa-moon"></i>
+            </button>
+            <a href="./contect.html" class="hidden sm:inline-flex items-center bg-[#F5921B] hover:bg-[#e07e0a] hover:scale-105 transition text-white font-semibold text-sm px-5 py-2.5 rounded-full shadow">
+              Donate
+            </a>
+            <label for="menu-toggle" class="lg:hidden flex flex-col justify-center items-center w-9 h-9 gap-[5px] cursor-pointer" aria-label="Toggle menu">
+              <span class="block w-6 h-[2.5px] bg-[#2D2D2D] rounded-full"></span>
+              <span class="block w-6 h-[2.5px] bg-[#2D2D2D] rounded-full"></span>
+              <span class="block w-6 h-[2.5px] bg-[#2D2D2D] rounded-full"></span>
+            </label>
+          </div>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden border-t border-gray-100 max-h-0 peer-checked:max-h-[400px] overflow-hidden transition-all duration-300">
+          <ul class="py-4 space-y-1">
+            <li><a href="./index.html" class="block px-4 py-3 text-[#2D2D2D] font-medium text-sm hover:bg-orange-50 rounded-lg">Home</a></li>
+            <li><a href="./programs.html" class="block px-4 py-3 text-[#2D2D2D] font-medium text-sm hover:bg-orange-50 rounded-lg">Programs</a></li>
+            <li><a href="./stories.html" class="block px-4 py-3 text-[#2D2D2D] font-medium text-sm hover:bg-orange-50 rounded-lg">Stories</a></li>
+            <li><a href="./contect.html" class="block px-4 py-3 text-[#2D2D2D] font-medium text-sm hover:bg-orange-50 rounded-lg">Get Involved</a></li>
+            <li class="pt-2 px-4 sm:hidden">
+              <a href="./contect.html" class="block text-center bg-[#F5921B] hover:bg-[#e07e0a] text-white font-semibold text-sm px-5 py-3 rounded-full">
+                🐾 Donate Now
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+     
+
+    <!-- Hero section-->
+    <section
+        class="max-w-full h-[210px] sm:h-[280px] md:h-[300px] lg:h-[400px] bg-[url('./assets/storytop.png')] bg-cover bg-center bg-no-repeat flex items-center">
+
+        <div class="px-6 sm:px-10 md:px-14 lg:px-16 text-white">
+
+            <h1
+                class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 transition-all duration-500 hover:scale-105 hover:translate-x-2">
+                Rescue Stories
+            </h1>
+
+            <p
+                class="text-sm sm:text-base md:text-lg font-semibold max-w-xl leading-7 transition-all duration-500 hover:translate-x-2">
+                Real Stories, Real second chances, Happy endings.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Stories section -->
+    <section class="bg-[#fafaf5] py-10 px-5">
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+            <!-- Card 1 -->
+            <div
+                class="bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-xl">
+
+                <img src="https://images.pexels.com/photos/32080246/pexels-photo-32080246.jpeg?cs=srgb&dl=pexels-shubh-gupta-2152097048-32080246.jpg&fm=jpg"
+                    class="w-full h-44 object-cover transition-all duration-500 hover:scale-110" alt="Bella's Journey">
+
+                <div class="p-4">
+
+                    <h2 class="font-bold text-[#173d38] text-sm">
+                        Bella's Journey
+                    </h2>
+
+                    <p class="text-gray-600 text-xs leading-5 mt-2">
+                        Found injured and alone, Bella received treatment
+                        and is now living happily with a family.
+                    </p>
+
+                    <a href="#"
+                        class="inline-block mt-3 text-[#006b5e] text-xs font-bold transition-all duration-300 hover:translate-x-2 hover:scale-105">
+                        Read More →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 2 -->
+            <div
+                class="bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-xl">
+                <img src="https://cdn.pixabay.com/photo/2015/11/17/13/13/puppy-1047521_1280.jpg"
+                    class="w-full h-44 object-cover transition-all duration-500 hover:scale-110" alt="Storm's New Life">
+                <div class="p-4">
+                    <h2 class="font-bold text-[#173d38] text-sm">
+                        Storm's New Life
+                    </h2>
+                    <p class="text-gray-600 text-xs leading-5 mt-2">
+                        Abandoned and fearful, Storm found a loving family
+                        and gained confidence again.
+                    </p>
+                    <a href="#"
+                        class="inline-block mt-3 text-[#006b5e] text-xs font-bold transition-all duration-300 hover:translate-x-2 hover:scale-105">
+                        Read More →
+                    </a>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div
+                class="bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-xl">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHwraPDL2LkKzBnjKNQ6thlVqa5suJq7sAycdzB7szmhKJP_6da-Lkw5c&s=10"
+                    class="w-full h-44 object-cover transition-all duration-500 hover:scale-110"
+                    alt="Moonlight's Recovery">
+                <div class="p-4">
+                    <h2 class="font-bold text-[#173d38] text-sm">
+                        Moonlight's Recovery
+                    </h2>
+                    <p class="text-gray-600 text-xs leading-5 mt-2">
+                        After a serious injury, Moonlight made a full recovery
+                        and now enjoys a happy life.
+                    </p>
+                    <a href="#"
+                        class="inline-block mt-3 text-[#006b5e] text-xs font-bold transition-all duration-300 hover:translate-x-2 hover:scale-105">
+                        Read More →
+                    </a>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div
+                class="bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-xl">
+                <img src="./assets/storytop.png"
+                    class="w-full h-44 object-cover transition-all duration-500 hover:scale-110" alt="Ranger's Story">
+                <div class="p-4">
+                    <h2 class="font-bold text-[#173d38] text-sm">
+                        Ranger's Story
+                    </h2>
+                    <p class="text-gray-600 text-xs leading-5 mt-2">
+                        Rescued from a neglected situation, Ranger is now
+                        thriving with a caring family.
+                    </p>
+                    <a href="#"
+                        class="inline-block mt-3 text-[#006b5e] text-xs font-bold transition-all duration-300 hover:translate-x-2 hover:scale-105">
+                        Read More →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Gallery section -->
+    <section class="bg-[#fafaf5] py-10 px-6">
+
+        <!-- Heading -->
+        <div class="max-w-6xl  md:ml-[75px] mb-5">
+
+            <h1 class="text-3xl font-bold text-[#173d38] transition-all duration-300 hover:translate-x-2">
+                Gallery
+            </h1>
+
+            <p class="text-sm text-gray-600 mt-1">
+                A glimpse of the lives we've saved.
+            </p>
+
+        </div>
+
+
+        <!-- Gallery -->
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+
+            <img src="./assets/card1.png"
+                class="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg transition-all duration-500 hover:scale-105 h over:shadow-xl"
+                alt="Gallery image">
+
+            <img src="./assets/card2.png"
+                class="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-xl"
+                alt="Gallery image">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ZhbKEiLmUCRa_r5_PG2sfZyN6KGE6cFB42yF8s-2Sza-GDDZThhyjpc&s=10"
+                class="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-xl"
+                alt="Gallery image">
+
+            <img src="./assets/card4.png"
+                class="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-xl"
+                alt="Gallery image">
+
+            <img src="./assets/card5.jpeg"
+                class="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-xl"
+                alt="Gallery image">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPZ5VTzD_rNihP3Y2GW-EeT_ghmTbjdA4fD0QdY84ao8IFSTrOomxb-H-C&s=10"
+                class="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-xl"
+                alt="Gallery image">
+
+            <img src="https://cdn.pixabay.com/photo/2022/10/04/01/58/squirrel-7497151_640.jpg"
+                class="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-xl"
+                alt="Gallery image">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBQDOj6o-Y5M_uqfkkNH7KEueLiaZWg8Fa1C26ypq10F4ci9g1uU8ORAE&s=10"
+                class="w-full  object-cover rounded-lg  row-span-2 transition-all duration-500 hover:scale-105 md:h-[290px] hover:shadow-xl"
+                alt="Gallery image">
+
+            <img src="https://media.istockphoto.com/id/1030966828/photo/robin.jpg?s=612x612&w=0&k=20&c=ac_Pt33ItiY9lRUt4yvjOQdqmcyKyLJnsG4zrPvcEIs="
+                class="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-xl"
+                alt="Gallery image">
+
+            <img src="https://images.pexels.com/photos/16488371/pexels-photo-16488371.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1200"
+                class="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-xl"
+                alt="Gallery image">
+                
+               <img src="https://img.magnific.com/free-photo/closeup-shot-two-zebras-cuddling_181624-5940.jpg?semt=ais_hybrid&w=740&q=80"
+                class="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-xl"
+                alt="Gallery image">   
+
+
+        </div>
+
+
+        <!-- Bottom Box section -->
+        <div class="max-w-7xl mx-auto mt-8 bg-[#EAF4EE] rounded-xl p-6">
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-5 text-center sm:text-left">
+                <!-- Icon -->
+              <div class="text-[#1F3D33]  text-5xl md:text-7xl  pt-1  font-bold ">
+                    <i class="fa-solid fa-paw"></i>
+                  </div>
+                <div>
+                    <h2 class="font-bold text-[#173d38] transition-all duration-300 hover:translate-x-2">
+                        Be Part of Their Story.
+                    </h2>
+                    <p class="text-sm text-gray-600 mt-1">
+                        Support, adopt or volunteer. Together we can make a difference.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-3 mt-3">
+                        <a href="#"
+                            class="bg-[#F4A340] text-white px-6 py-2 rounded-lg text-sm font-semibold transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-lg">
+                            Donate Now
+                        </a>
+                        <a href="#"
+                            class="border border-gray-400 text-[#173d38] px-6 py-2 rounded-lg text-sm font-semibold transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-lg">
+                            Get Involved
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<!-- ============  FOOTER SECTION ============ -->
+    <footer class="bg-[#1B3A2F] text-white pt-12 pb-6 mt-12">
+      <!-- 4-Column Grid Container -->
+      <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        
+        <!-- Column 1: Logo & About -->
+        <div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-paw text-2xl text-[#f6a21a]"></i>
+            <h2 class="text-xl font-bold">Paws & Care</h2>
+          </div>
+          <p class="text-sm text-gray-300 mt-3 ">
+            We rescue, care for, and shelter animals in need. Every life matters.
+          </p>
+          <!-- Social Icons -->
+          <div class="flex gap-4 mt-4 text-lg">
+            <a href="#" class="hover:text-[#f6a21a]"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="hover:text-[#f6a21a]"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="hover:text-[#f6a21a]"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="hover:text-[#f6a21a]"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="text-base font-bold text-[#f6a21a] mb-3">Quick Links</h3>
+          <ul class="space-y-2 text-sm text-gray-300">
+            <li><a href="./index.html" class="hover:text-[#f6a21a]">Home</a></li>
+            <li><a href="./programs.html" class="hover:text-[#f6a21a]">Programs</a></li>
+            <li><a href="./stories.html" class="hover:text-[#f6a21a]">Stories</a></li>
+            <li><a href="./contect.html" class="hover:text-[#f6a21a]">Get Involved</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Programs -->
+        <div>
+          <h3 class="text-base font-bold text-[#f6a21a] mb-3">Programs</h3>
+          <ul class="space-y-2 text-sm text-gray-300">
+            <li><a href="#" class="hover:text-[#f6a21a]">Rescue & Recovery</a></li>
+            <li><a href="#" class="hover:text-[#f6a21a]">Medical Care</a></li>
+            <li><a href="#" class="hover:text-[#f6a21a]">Adoption</a></li>
+            <li><a href="#" class="hover:text-[#f6a21a]">Food & Shelter</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact Us -->
+        <div>
+          <h3 class="text-base font-bold text-[#f6a21a] mb-3">Contact Us</h3>
+          <ul class="space-y-3 text-sm text-gray-300">
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-phone text-[#f6a21a]"></i>
+              <a href="tel:+919876543210" class="hover:text-[#f6a21a]">+91 98765 43210</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-envelope text-[#f6a21a]"></i>
+              <a href="mailto:info@pawsandcare.org" class="hover:text-[#f6a21a]">info@pawsandcare.org</a>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-location-dot text-[#f6a21a] mt-1"></i>
+              <span>123 Green Valley Road, Bengaluru, Karnataka</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bottom Bar -->
+      <div class="border-t border-gray-700 mt-10 pt-4 text-center text-xs text-gray-400">
+        <p>© 2026 Paws & Care Foundation. All rights reserved.</p>
+      </div>
+    </footer>
+
+  
+</body>
+
+</html>
